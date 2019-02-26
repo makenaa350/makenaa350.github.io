@@ -1,0 +1,105 @@
+<!doctype html>
+	<html lang="en">
+	  <head>
+	    <meta charset="utf-8">
+	    <title>Tips and Tricks</title>
+	    <link href="index.css" rel="stylesheet" type="text/css">
+	  </head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  font-family: courier;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #A9A9A9;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.active {
+  background-color: #ff66a3;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+</style>
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+  <a href="index.html">About Me</a>
+  <a href="portfolio.html">Portfolio</a>
+  <a href="resume.html">Resume</a>
+  <a href="tips.html" class="active">Tips and Tricks</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+    <h1 style="font-family:courier;">Tips and Tricks</h1><br>
+    <p style="font-family:courier;">Here are some tips I've learned for this class:</p> <br>
+        <p style="font-family:courier;">-Save your work often</p> <br>
+        <p style="font-family:courier;">-Be patient and don't give up</p> <br>
+        <p style="font-family:courier;">-Don't be afraid to ask for help</p> <br>
+        <p style="font-family:courier;">-Use the resources on Haiku and the internet</p> <br>
+        <p style="font-family:courier;">-Keep track of your assets from the start</p> <br>
+  <a href="https://docs.google.com/document/d/16ZSTH7YjmXDPrLyX8RTZGEq_FT_14eVNk5VCUBXmp2w/edit?usp=sharing" target="_blank" a="">Asset Inventory</a>
+    </ul><br>
+    <br>
+<p id="demo">How does a computer catch fish?</p>
+<button type="button" onclick="myFunction()">Click for Answer</button>
+<script>
+function myFunction() {
+    document.getElementById("demo").innerHTML = "With its internet";
+}
+</script>
+	  </body>
+	</html>

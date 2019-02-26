@@ -1,0 +1,25 @@
+body {
+    background-color: lightpink;
+    color: white;
+    text-align: center;
+}
+h1 {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+}
+title {
+    color: white;
+    text-align: center;
+}
+
+b1 {
+    color: white;
+    text-align: center;
+    font-family: verdana;
+    font-size: 20px;
+}
+body {
+  font-family: courier;
+}
